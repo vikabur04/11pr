@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F0F0F0">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="126dp"
+        android:layout_height="30dp"
+        android:text="Пароль:"
+        android:textSize="18sp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="268dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="132dp"
+        android:layout_height="32dp"
+        android:text="Пользователь:"
+        android:textSize="18sp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <EditText
+        android:id="@+id/edit_user"
+        android:layout_width="221dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="введите имя"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="#5F5F5F"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="221dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#373535"
+        android:hint="введите пароль"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="#5F5F5F"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Авторизация"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AFAFAF"
+        android:text="Войти"
+        android:layout_marginTop="450dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
